@@ -2,8 +2,11 @@
 <editor
 
   [(ngModel)]="content"
+
   [init]="{
      height: 500,
+     selector: 'textarea',
+     branding: false,
      menubar: false,
      valid_elements : 'a[href|target=_blank],table,tbody,tr,th,td,strong/b,div[align],br',
      toolbar:

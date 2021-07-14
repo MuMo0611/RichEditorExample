@@ -64,3 +64,16 @@ This is useful in case of pasting a content from other rich client editor i.e., 
 editor can be restricted with the help of ``toolbar`` we can see for text we defined ``bold`` and ``italic`` styles, let
 us assume we need also the underline styling, then adding the keyword ``underline`` in the toolbar will also add the underline style to the editor.
 
+#### For removing the footer of the editor ``powered by tinymce``, the following configuration should be defined:
+````
+  [init]="{
+     branding: false
+     }
+````
+
+#### To remove the annoying msg ``tiny is not registered in cloud`` just insert the following code in style.css
+````
+    .tox .tox-notification {
+      display: none !important;
+    }
+````
