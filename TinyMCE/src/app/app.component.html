@@ -1,0 +1,15 @@
+<h1>TinyMCE 5 Angular Demo</h1>
+<editor
+
+  [(ngModel)]="content"
+  [init]="{
+     height: 500,
+     menubar: false,
+     valid_elements : 'a[href|target=_blank],table,tbody,tr,th,td,strong/b,div[align],br',
+     toolbar:
+       'undo redo | formatselect | bold italic  | \
+       alignleft aligncenter alignright alignjustify | \
+       bullist numlist outdent indent | removeformat | help'
+   }"
+></editor>
+<button (click)="logTinyMceContent()">Click me</button>
